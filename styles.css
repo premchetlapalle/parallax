@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.bimg, .fimg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.bimg{
+    transform: translateZ(-40px) scale(5.2);
+}
+.fimg{
+    transform: translateZ(-20px) scale(3.2);
+}
+h1{
+    position: absolute;
+    color: aliceblue;
+    text-shadow: 0 0 10px rgba(0,0, 0, 0.3);
+    font-size: 7rem;
+    top: 13rem;
+    left: 37%;
+}
+
+section{
+    background-color:rgb(45,45,45);
+    color: whitesmoke;
+    padding: 5rem 0;
+}
+
+.bg{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.bg1{
+    background-image: url(mercury.jpg);
+}
+.bg2{
+    background-image: url(venus.png);
+}
+.bg3{
+    background-image: url(earth1.jpg);
+}
+.bg4{
+    background-image: url(mars1.jpg);
+}
+.bg5{
+    background-image: url(jupiter1.jpg);
+}
+.bg6{
+    background-image: url(saturn.jpg);
+}
+.bg7{
+    background-image: url(uranus1.png);
+}
+.bg8{
+    background-image: url(neptune1.png);
+}
+
+h2{
+    font-size: 4rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.desc{
+    position: absolute;
+    background-color: aliceblue;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 40%;
+    color: black;
+    font-size: 4rem;
+    font-weight: 600;
+}
